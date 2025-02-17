@@ -125,9 +125,9 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Home from "./components/Home";
-import Game from "./components/Tic-Tac-Toe";
-import Products from "./components/Products";
+import Home from "./Home";
+import Game from "./Tic-Tac-Toe/Tic-Tac-Toe";
+import Products from "./Products/Products";
 
 function App() {
     return (
