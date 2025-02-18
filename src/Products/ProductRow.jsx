@@ -1,8 +1,8 @@
 function ProductRow({ productName, productPrice, stocked}) {
     return (
         <div className="horizontalContainer">
-        <p style={{color: stocked ? "white" : "red"}}>{productName}</p>
-        <p>{productPrice}</p>
+        <p data-testid="product-name" style={{color: stocked ? "white" : "red"}}>{productName}</p>
+        <p data-testid="product-price">{productPrice}</p>
         </div>
     )
 }

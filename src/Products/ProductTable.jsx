@@ -4,8 +4,10 @@ import ProductRow from "./ProductRow";
 function ProductTable({textFilter, inStockOnly}) {
     var filteredProducts = inStockOnly ? PRODUCTS.filter(p => p.stocked) : PRODUCTS;
     filteredProducts = textFilter=='' ? filteredProducts : filteredProducts.filter(p => p.name.toLowerCase().includes(textFilter.toLowerCase()));
+    
     const categories = filteredProducts.map(p => p.category);
     const uniqueCats = categories.filter((c, index) => categories.indexOf(c) === index);
+    
     var productTable = [];
     for (var i = 0; i < uniqueCats.length; i++) {
         productTable.push(<ProductCategoryRow Category={uniqueCats[i]} />)

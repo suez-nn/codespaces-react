@@ -1,7 +1,7 @@
-function ProductCategoryRow({ Category }) {
+function ProductCategoryRow({ category }) {
     return (
         <>
-        <p style={{ fontWeight: "bold" }}>{Category}</p>
+        <p style={{ fontWeight: "bold" }}>{category}</p>
         </>
     )
 }
